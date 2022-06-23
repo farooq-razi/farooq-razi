@@ -1,0 +1,52 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[[source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+
+[[source]]
+name = "sjtu"
+url = "https://mirrors.sjtug.sjtu.edu.cn/pypi/web/simple"
+verify_ssl = true
+
+[packages]
+aenum = "*"
+chardet = "*"
+dictdumper = "~=0.8.0"
+emoji = "*"
+tbtrim = "~=0.3.0"
+
+[dev-packages]
+pypcapkit = {editable = true,path = "."}
+pyshark = "*"
+dpkt = "*"
+scapy = "*"
+beautifulsoup4 = {extras = ["html5lib"],version = "*"}
+requests = {extras = ["socks"],version = "*"}
+autopep8 = "*"
+bandit = "*"
+mypy = "*"
+pylint = "*"
+ipython = "*"
+coverage = "*"
+codecov = "*"
+sphinx = "*"
+sphinx-autodoc-typehints = "*"
+rstcheck = {extras = ["sphinx","toml"],version = "*"}
+esbonio = "*"
+vermin = "*"
+types-chardet = "*"
+types-docutils = "*"
+types-emoji = "*"
+types-requests = "*"
+types-urllib3 = "*"
+
+[requires]
+python_version = "3"
+
+[pipenv]
+#allow_prereleases = true
